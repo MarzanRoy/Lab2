@@ -12,10 +12,9 @@ def display_main_menu():
     print("Enter some number seperated by commas (e.g. 5, 67, 32, ...)")
 
 def get_user_input():
-    user_input = input()
+    user_input = input().split(",")
     num_list = list()
-    input_list = user_input.split(",")
-    for items in input_list:
+    for items in user_input:
         num_list.append(float(items.strip()))
     #print(input_list)
     #print (num_list)
